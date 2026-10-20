@@ -32,3 +32,16 @@ python otto/render_narrado.py
 ```
 
 El archivo de entrada es `otto/narracion.mp3`. Los tiempos de escena y movimiento están definidos en `render_narrado.py`; se adaptaron a las frases y pausas de esta grabación concreta. Otra narración requiere reajustarlos. El script genera el MP4 final, capturas y archivos intermedios.
+
+## Versión con el estilo de la referencia
+
+`motor-otto-estilo.mp4` mantiene la narración y la duración de 25,5 segundos, con una ilustración original del motor: carcasa morada con volumen, fondo turquesa con luz verde, etiquetas amarillas, líneas indicadoras y acercamientos circulares animados. No utiliza imágenes extraídas del video de referencia.
+
+Reproducción:
+
+```sh
+python otto/render_narrado.py
+python otto/render_estilo.py
+```
+
+El segundo comando reutiliza el audio mezclado de `motor-otto-narrado.mp4`. La ilustración es didáctica y esquemática; no representa un motor a escala.
